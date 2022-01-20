@@ -9,7 +9,12 @@ export default function Blogs() {
       <div>
           <Navbar />
           <BlogHeader />
-          <BlogCard />
+          <div className={classes.cards}>
+            <BlogCard />
+            <BlogCard />
+
+          </div>
+          
 
       </div>
   );
