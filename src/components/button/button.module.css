@@ -1,0 +1,17 @@
+button{
+    
+    width: 146px;
+    height: 28px;
+    background: #DB8521;
+    border-radius: 50px;
+    border: 1px transparent;
+    cursor: pointer;
+    
+}
+.link {
+    text-decoration: none;
+    color: #ffff;
+    background: #DB8521;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
