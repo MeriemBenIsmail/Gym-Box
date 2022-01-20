@@ -1,8 +1,8 @@
 import React from 'react';
 import classes from './navbar.module.css';
 import { Link } from 'react-router-dom';
-import Button from '../button/Button';
-import fontB from '../../fonts/Bronx Bystreets 1.4 ╕ PERSONAL USE ONLY.ttf'
+import Button from '../../UI/button/Button';
+
 export default function Navbar() {
 
     let activeStyle = {color:"#DB8521",borderBottom:"1px solid #DB8521"}
@@ -12,7 +12,7 @@ export default function Navbar() {
 
   return (
       <div className={classes.navbar}>
-          <div className={classes.logo} style={{fontFamily:fontB }}>
+          <div className={classes.logo} >
               GYM BOX
           </div>
           <ul className={classes.links}>
