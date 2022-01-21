@@ -1,13 +1,13 @@
 import React from 'react';
 import classes from './blogCard.module.css';
-import img from './gym7.jpg';
+
 import Button from '../UI/button/Button';
 import DateBox from '../dateBox/DateBox';
 import {motion} from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import { useEffect } from 'react';
 import { useAnimation } from 'framer-motion';
-export default function BlogCard() {
+export default function BlogCard(props) {
   const {ref, inView} = useInView({
     threshold: 0.2//20% should be visible
   });
@@ -43,13 +43,13 @@ export default function BlogCard() {
         <div className={classes.img}>
           <div className={classes.date}>  <DateBox /></div>
          
-          <img src={img} alt="" />
+          <img src={props.image} alt="" />
 
         </div>
         
         <div className={classes.content}>
-          <h2 className={classes.title}>Lorem Lorem Lorem Lorem Lorem </h2>
-          <p className={classes.description}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, eligendi explicabo molestias perferendis rerum vitae earum fugiat consequuntur nostrum consequatur? Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, suscipit. Non nobis at eligendi quis totam voluptas eum aspernatur sapiente Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem quos magni a consequatur officia distinctio laborum molestiae debitis sint quidem. [...]</p>
+          <h2 className={classes.title}>{props.title}</h2>
+          <p className={classes.description}>{props.description}</p>
 
       
         
