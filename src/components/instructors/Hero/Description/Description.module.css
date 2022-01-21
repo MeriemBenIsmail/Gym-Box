@@ -1,0 +1,43 @@
+.heroDescriptionContainer {
+    position: absolute;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    padding: 100px;
+    display: flex;
+    flex-direction: column;
+    pointer-events: none;
+}
+
+.heroDescription {
+    width: 50%;
+    margin: auto 0;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.heroDescription p {
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    width: 80%;
+    text-align: justify;
+}
+
+.heroDescription h1 {
+    color: #DB8521;
+    font-size: 40px;
+}
+
+@media only screen and (max-width: 800px) {
+    .heroDescriptionContainer {
+        padding: 50px;
+    }
+    .heroDescription {
+        width: 100%;
+    }
+    .heroDescription p {
+        width: 100%;
+    }
+}

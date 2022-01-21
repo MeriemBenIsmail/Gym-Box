@@ -1,0 +1,19 @@
+.album {
+    display: flex;
+    width: 100vw;
+}
+
+.albums {
+    display: block;
+}
+
+.second {
+    margin-left: 80px;
+}
+
+.hoverControl {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 99vh;
+}
