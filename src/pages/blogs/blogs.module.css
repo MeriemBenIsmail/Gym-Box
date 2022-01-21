@@ -34,7 +34,6 @@
     grid-template-columns:repeat(auto-fit,minmax(15rem,23rem)) ;
     grid-gap: 1rem;
 }
-@media (max-width: 1186px) {
+
     
-    
-}
+  
