@@ -1,0 +1,9 @@
+.heroOverlay {
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(70deg, black 40%, rgba(0, 0, 0, 0.753) 80%, transparent 100%);
+    position: absolute;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+}

@@ -1,7 +1,7 @@
 import React from 'react';
 import BlogCard from '../../components/blogCard/BlogCard';
 import BlogHeader from '../../components/blogHeader/BlogHeader';
-import Navbar from '../../components/navbar/Navbar';
+import Navbar from '../../components/layout/navbar/Navbar';
 import classes from './blogs.module.css';
 
 export default function Blogs() {

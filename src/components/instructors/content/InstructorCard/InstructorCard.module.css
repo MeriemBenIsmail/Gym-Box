@@ -1,0 +1,35 @@
+.instructorCard {
+    border: solid 0.5px #dec09d7a;
+    border-radius: 5px;
+    width: 250px;
+    height: 300px;
+    position: relative;
+}
+
+.blurCard {
+    border: solid 0.5px #dec09d7a;
+    background-color: rgba(0, 0, 0, 0.582);
+    border-radius: 5px;
+    width: 250px;
+    height: 300px;
+    position: absolute;
+    top: 0;
+}
+
+.instructorCard img {
+    object-fit: cover;
+    width: 248.5px;
+    height: 298.5px;
+    border-radius: 5px;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+}
+
+.instructorCard:hover img {
+    -webkit-filter: unset;
+    filter: unset;
+}
+
+.instructorCard:hover {
+    border: unset;
+}

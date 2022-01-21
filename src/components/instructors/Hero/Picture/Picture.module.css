@@ -1,0 +1,12 @@
+.picture img {
+    width: 150px;
+    height: 150px;
+    border-radius: 10px;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    object-fit: cover;
+}
+
+.picture {
+    padding: 10px;
+}
