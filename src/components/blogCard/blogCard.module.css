@@ -9,6 +9,8 @@
     height: 25rem;
     color: #ffff;
     padding: 20px;
+    background: #000000;
+    height: 100%;
  
 }
 .date {
@@ -19,14 +21,21 @@
 }
 
 .img {
+   
     width: 100%;
-    height: 60%;
+    
     
 }
 .img img {
     
-    width:fill;
+    width: 100%;
+    border-radius: 10%;
     
+
+    
+}
+.content {
+    height: 100%;
 }
 .title {
     font-size: 1.8rem;
