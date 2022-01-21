@@ -35,15 +35,6 @@
         padding: 50px;
     }
     .heroDescription {
-        width: 60%;
-    }
-    .heroDescription p {
-        width: 90%;
-    }
-}
-
-@media only screen and (max-width: 600px) {
-    .heroDescription {
         width: 100%;
     }
     .heroDescription p {
