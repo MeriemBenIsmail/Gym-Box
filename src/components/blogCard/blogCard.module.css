@@ -21,16 +21,15 @@
 }
 
 .img {
-   
     width: 100%;
-    
-    
+    height: 220px;
 }
 .img img {
     
-    width: 100%;
-    border-radius: 10%;
-    
+    width: fill;
+    border-radius: 10px;
+   
+    height: 100%;
 
     
 }

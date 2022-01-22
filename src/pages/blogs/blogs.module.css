@@ -5,6 +5,7 @@
 .section {
     display: flex;
     padding: 50px;
+    justify-content: center;
     
 }
 .cat{
@@ -15,15 +16,19 @@
     
 }
 .margin_section {
-    width: 30%;
+    margin-top: 150px;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    width: 30%;
     align-items: center;
+    position:absolute;
+    
+   
     
 }
 .cards {
-    width: 70%;
+
+   width: 70%;
     align-items: center;
     display: grid;
     grid-template-columns:repeat(auto-fit,minmax(15rem,23rem)) ;

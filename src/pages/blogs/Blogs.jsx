@@ -10,8 +10,34 @@ import {motion} from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import { useEffect } from 'react';
 import { useAnimation } from 'framer-motion';
+import img1 from './gym7.jpg';
+import img2 from './gym8.jpg';
+import img3 from './gym9.gif';
+import img4 from './gym10.jpg';
 export default function Blogs() {
   
+  const blogs = [
+    {
+      title:"Lorem Lorem Lorem Lorem Lorem",
+      description:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, eligendi explicabo molestias perferendis rerum vitae earum fugiat consequuntur nostrum consequatur? Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, suscipit. Non nobis at eligendi quis totam voluptas eum aspernatur sapiente Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem quos magni a consequatur officia distinctio laborum molestiae debitis sint quidem. [...]",
+      image:img1
+    },
+    {
+      title:"Lorem Lorem Lorem Lorem Lorem",
+      description:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, eligendi explicabo molestias perferendis rerum vitae earum fugiat consequuntur nostrum consequatur? Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, suscipit. Non nobis at eligendi quis totam voluptas eum aspernatur sapiente Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem quos magni a consequatur officia distinctio laborum molestiae debitis sint quidem. [...]",
+      image:img2
+    },
+    {
+      title:"Lorem Lorem Lorem Lorem Lorem",
+      description:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, eligendi explicabo molestias perferendis rerum vitae earum fugiat consequuntur nostrum consequatur? Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, suscipit. Non nobis at eligendi quis totam voluptas eum aspernatur sapiente Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem quos magni a consequatur officia distinctio laborum molestiae debitis sint quidem. [...]",
+      image:img3
+    },
+    {
+      title:"Lorem Lorem Lorem Lorem Lorem",
+      description:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, eligendi explicabo molestias perferendis rerum vitae earum fugiat consequuntur nostrum consequatur? Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, suscipit. Non nobis at eligendi quis totam voluptas eum aspernatur sapiente Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem quos magni a consequatur officia distinctio laborum molestiae debitis sint quidem. [...]",
+      image:img4
+    }
+  ]
 
   const {ref, inView} = useInView({
     threshold: 0//20% should be visible
@@ -50,7 +76,7 @@ export default function Blogs() {
 
             <div className={classes.section}>
               <div  style={{color:"white"}} className={classes.margin_section}>
-                <div className={classes.search}>
+                <div style={{margin:"0px 0px 60px 40px"}} className={classes.search}>
                   <Title title="Search" width="200px" />
                   <SearchBox />
 
@@ -70,10 +96,12 @@ export default function Blogs() {
 
               </div>
               <div className={classes.cards}>
-                <BlogCard />
-                <BlogCard />
-                <BlogCard />
-                <BlogCard />
+                { blogs.map((val,key) =>{
+                  return(
+                    <BlogCard title={val.title} description={val.description} image={val.image}/>
+                  )
+                }) }
+            
               </div>
 
             </div>

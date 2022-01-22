@@ -8,7 +8,7 @@ export default function Title(props) {
   
   const width = props.width;
   const {ref, inView} = useInView({
-    threshold: 0//20% should be visible
+    threshold: 0.2 //20% should be visible
   });
   
   //ref : element that we want to monitor : when ref in view => inView =true , else false
@@ -29,6 +29,7 @@ export default function Title(props) {
     if(!inView) {
       animation.start({x:"-100vw",
       transition: {
+          
         type: 'spring' , duration: 1.5,bounce: 0
       }
     })
