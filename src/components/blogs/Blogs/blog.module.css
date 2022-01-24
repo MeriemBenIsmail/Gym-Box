@@ -5,6 +5,7 @@
     grid-gap: 1rem;
     position: relative;
     overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 .blog_container {
     display: flex;
@@ -15,4 +16,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.box_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 230px;
 }
