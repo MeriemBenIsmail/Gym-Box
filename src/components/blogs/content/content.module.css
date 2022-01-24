@@ -1,0 +1,50 @@
+.contentContainer {
+    background-color: black;
+    padding: 30px 100px 60px 100px;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    position: relative;
+}
+
+.contentContainer .quote {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    height: calc(100vh - 30px);
+    color: #fff;
+    font-size: 20px;
+    position: sticky;
+    top: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    z-index: 9;
+    border-right: solid 0.5px #dec09d7a;
+
+}
+.quote > div {
+    margin: 40px;
+}
+
+.cat {
+    color: #fff;
+    font-weight: 400;
+    margin: 15px 0 15px 0;
+    letter-spacing: 2px;
+}
+
+
+@media only screen and (max-width: 1200px) {
+    .contentContainer {
+        grid-template-columns: 1.5fr 4fr;
+        padding-left: 20px ;
+    }
+}
+
+@media only screen and (max-width: 928px) {
+    .contentContainer {
+        
+    }
+    
+}
+
