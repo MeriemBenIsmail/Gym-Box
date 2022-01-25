@@ -1,7 +1,7 @@
 import React from 'react';
 import classes from './blogCard.module.css';
 
-import Button from '../UI/button/Button';
+import Button from '../../UI/button/Button';
 import DateBox from '../dateBox/DateBox';
 import {motion} from 'framer-motion';
 import { useInView } from 'react-intersection-observer';

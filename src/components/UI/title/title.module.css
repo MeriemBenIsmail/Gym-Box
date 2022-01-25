@@ -14,5 +14,6 @@ svg {
   margin-top: -240px;
   margin-left: -98px;
   margin-bottom: -30px;
+  pointer-events: none;
   
 } 
