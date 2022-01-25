@@ -4,7 +4,7 @@ import {motion} from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import { useEffect } from 'react';
 import { useAnimation } from 'framer-motion';
-export default function BlogHeader() {
+export default function BlogHeader(props) {
   
   const {ref, inView} = useInView({
     threshold: 0.2 //20% should be visible
@@ -36,8 +36,13 @@ export default function BlogHeader() {
   },[inView]);
 
   return (
-    <div ref={ref} className={classes.header}>
-        <motion.h1 animate={animation} className={classes.title}>BLOGS</motion.h1>
+    <div className={classes.box}>
+          <div ref={ref} className={classes.header}>
+            <motion.h1 animate={animation} className={classes.title}>BLOGS</motion.h1>
+          </div>
+          <div className={classes.blog_box}>{props.title}</div>
+
     </div>
+    
   );
 }
