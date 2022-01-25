@@ -54,7 +54,7 @@ export default function BlogCard(props) {
       
         
           <div className={classes.btn}>
-            <Button content='Read More' link="/blogs/blog1" />
+            <Button content='Read More' link={"/blogs/"+props.link} />
           </div>
 
         </div>
