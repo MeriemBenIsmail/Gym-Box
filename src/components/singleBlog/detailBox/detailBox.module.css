@@ -1,0 +1,14 @@
+.box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 185px;
+    padding: 0 20px 0 20px;
+}
+.icon i{
+    color:#DB8521;
+}
+.content {
+    color: #fff;
+    font-weight: 300;
+}

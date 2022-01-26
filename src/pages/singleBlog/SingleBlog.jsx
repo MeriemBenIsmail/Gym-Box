@@ -1,80 +1,60 @@
 import React from 'react';
-import BlogCard from '../blogCard/BlogCard';
-import classes from './blog.module.css';
-import img1 from '../../../pages/blogs/gym7.jpg';
-import img2 from '../../../pages/blogs/gym8.jpg';
-import img3 from '../../../pages/blogs/gym9.gif';
-import img4 from '../../../pages/blogs/gym10.jpg';
-import PaginationBox from '../../UI/paginationBox/PaginationBox';
-import { useState } from 'react';
-export default function Blog() {
+import { useParams } from "react-router";
+import img1 from '../blogs/gym7.jpg'
+import img2 from '../blogs/gym8.jpg';
+import img3 from '../blogs/gym9.gif';
+import img4 from '../blogs/gym10.jpg';
+import Content from '../../components/singleBlog/content/Content';
+import Container from '../../components/layout/container/Container';
+import Navbar from '../../components/layout/navbar/Navbar';
+import BlogHeader from '../../components/singleBlog/blogHeader/BlogHeader';
 
-      const [blog1IsOpen,setBlog1IsOpen] = useState(true);
-      const [blog2IsOpen,setBlog2IsOpen] = useState(false);
-      const [blog3IsOpen,setBlog3IsOpen] = useState(false);
-      const colorActive = "#DB8521";
-      const colorNormal = "#8E8E8E";
-      const [color1,setColor1] = useState(colorActive);
-      const [color2,setColor2] = useState(colorNormal);
-      const [color3,setColor3] = useState(colorNormal);
-
-      const handleClick1 = () => {
-        setBlog1IsOpen(true);
-        setColor1(colorActive);
-        setBlog2IsOpen(false);
-        setColor2(colorNormal);
-        setBlog3IsOpen(false);
-        setColor3(colorNormal);
-        window.scroll(0,690);
-        
-        
-
-      }
-      const handleClick2 = () => {
-        setBlog2IsOpen(true);
-        setColor2(colorActive);
-        setBlog1IsOpen(false);
-        setColor1(colorNormal);
-        setBlog3IsOpen(false);
-        setColor3(colorNormal);
-        window.scroll(0,690);
-        
-      }
-      const handleClick3 = () => {
-        setBlog3IsOpen(true);
-        setColor3(colorActive);
-        setBlog2IsOpen(false);
-        setColor2(colorNormal);
-        setBlog1IsOpen(false);
-        setColor1(colorNormal);
-        window.scroll(0,680);
-        
-      }
-
+export default function SingleBlog() {
+    
       const blogs1 = [
         {
           id:1,
           title:"Lorem Lorem Lorem Lorem Lorem",
           description:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, eligendi explicabo molestias perferendis rerum vitae earum fugiat consequuntur nostrum consequatur? Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, suscipit. Non nobis at eligendi quis totam voluptas eum aspernatur sapiente Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem quos magni a consequatur officia distinctio laborum molestiae debitis sint quidem. [...]",
-          image:img1
+          image:img1,
+          date:"June 5 , 2021",
+          owner:"FoulenX",
+          cat:"Fitness,Gym",
+          tags:"Piscine,Natation",
+          subject:"Bénifices de la natation , coach , entraineur blablabla"
         },
         {
           id:2,
           title:"Lorem Lorem Lorem Lorem Lorem",
           description:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, eligendi explicabo molestias perferendis rerum vitae earum fugiat consequuntur nostrum consequatur? Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, suscipit. Non nobis at eligendi quis totam voluptas eum aspernatur sapiente Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem quos magni a consequatur officia distinctio laborum molestiae debitis sint quidem. [...]",
-          image:img2
+          image:img2,
+          date:"July 20 , 2021",
+          owner:"FoulenY",
+          cat:"Fitness,Gym",
+          tags:"Piscine,Natation",
+          subject:"Bénifices de la natation , coach , entraineur blablabla"
         },
         {
           id:3,
           title:"Lorem Lorem Lorem Lorem Lorem",
           description:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, eligendi explicabo molestias perferendis rerum vitae earum fugiat consequuntur nostrum consequatur? Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, suscipit. Non nobis at eligendi quis totam voluptas eum aspernatur sapiente Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem quos magni a consequatur officia distinctio laborum molestiae debitis sint quidem. [...]",
-          image:img3
+          image:img3,
+          date:"June 14 , 2022",
+          owner:"FoulenZ",
+          cat:"Fitness,Gym",
+          tags:"Piscine,Natation",
+          subject:"Bénifices de la natation , coach , entraineur blablabla"
         },
         {
           id:4,
           title:"Lorem Lorem Lorem Lorem Lorem",
           description:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, eligendi explicabo molestias perferendis rerum vitae earum fugiat consequuntur nostrum consequatur? Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, suscipit. Non nobis at eligendi quis totam voluptas eum aspernatur sapiente Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem quos magni a consequatur officia distinctio laborum molestiae debitis sint quidem. [...]",
-          image:img4
+          image:img4,
+          date:"January 5 , 2021",
+          owner:"FoulenT",
+          cat:"Fitness,Gym",
+          tags:"Piscine,Natation",
+          subject:"Bénifices de la natation , coach , entraineur blablabla"
         }
       ]
       const blogs2 = [
@@ -82,25 +62,45 @@ export default function Blog() {
           id:5,
           title:"Lorem Lorem Lorem Lorem Lorem",
           description:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, eligendi explicabo molestias perferendis rerum vitae earum fugiat consequuntur nostrum consequatur? Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, suscipit. Non nobis at eligendi quis totam voluptas eum aspernatur sapiente Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem quos magni a consequatur officia distinctio laborum molestiae debitis sint quidem. [...]",
-          image:img4
+          image:img4,
+          date:"June 5 , 2021",
+          owner:"FoulenX",
+          cat:"Fitness,Gym",
+          tags:"Piscine,Natation",
+          subject:"Bénifices de la natation , coach , entraineur blablabla"
         },
         {
           id:6,
           title:"Lorem Lorem Lorem Lorem Lorem",
           description:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, eligendi explicabo molestias perferendis rerum vitae earum fugiat consequuntur nostrum consequatur? Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, suscipit. Non nobis at eligendi quis totam voluptas eum aspernatur sapiente Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem quos magni a consequatur officia distinctio laborum molestiae debitis sint quidem. [...]",
-          image:img1
+          image:img1,
+          date:"June 5 , 2021",
+          owner:"FoulenX",
+          cat:"Fitness,Gym",
+          tags:"Piscine,Natation",
+          subject:"Bénifices de la natation , coach , entraineur blablabla"
         },
         {
           id:7,
           title:"Lorem Lorem Lorem Lorem Lorem",
           description:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, eligendi explicabo molestias perferendis rerum vitae earum fugiat consequuntur nostrum consequatur? Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, suscipit. Non nobis at eligendi quis totam voluptas eum aspernatur sapiente Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem quos magni a consequatur officia distinctio laborum molestiae debitis sint quidem. [...]",
-          image:img2
+          image:img2,
+          date:"June 5 , 2021",
+          owner:"FoulenX",
+          cat:"Fitness,Gym",
+          tags:"Piscine,Natation",
+          subject:"Bénifices de la natation , coach , entraineur blablabla"
         },
         {
           id:8,
           title:"Lorem Lorem Lorem Lorem Lorem",
           description:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, eligendi explicabo molestias perferendis rerum vitae earum fugiat consequuntur nostrum consequatur? Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, suscipit. Non nobis at eligendi quis totam voluptas eum aspernatur sapiente Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem quos magni a consequatur officia distinctio laborum molestiae debitis sint quidem. [...]",
-          image:img3
+          image:img3,
+          date:"June 5 , 2021",
+          owner:"FoulenX",
+          cat:"Fitness,Gym",
+          tags:"Piscine,Natation",
+          subject:"Bénifices de la natation , coach , entraineur blablabla"
         }
       ]
       const blogs3 = [
@@ -129,44 +129,31 @@ export default function Blog() {
           image:img3
         }
       ]
-     
-    
+      const { id } = useParams();
+      let blog = {};
+      const getBlog = () => {
+        if(id <= 4) {
+            blog = blogs1[id-1];
+        } else if (4 < id <=8) {
+            blog = blogs2[id-5];
+        } else if (id > 8) {
+            blog = blogs3[id-9];
+        }
+      }
+       {getBlog()}
 
-    return (
-    <div className={classes.blog_container}>
-
-       <div className={classes.cards}>
-     
-                {  (blog1IsOpen) && blogs1.map((val,key) =>{
-                  return(
-                    <BlogCard title={val.title} description={val.description} image={val.image} link={val.id}/>
-                  )
-                }) }
-                 {  (blog2IsOpen) && blogs2.map((val,key) =>{
-                  return(
-                    <BlogCard title={val.title} description={val.description} image={val.image} link={val.id}/>
-                  )
-                }) }
-                 {  (blog3IsOpen) && blogs3.map((val,key) =>{
-                  return(
-                    <BlogCard title={val.title} description={val.description} image={val.image} link={val.id}/>
-                  )
-                }) }
-             
-              
-            
-      </div>
-      <div className={classes.pagination}>
-        <div className={classes.box_container}>
-          <div onClick={handleClick1}><PaginationBox  color={color1} content="1"/></div>
-          <div onClick={handleClick2}><PaginationBox  color={color2} content="2"/></div>
-          <div onClick={handleClick3}><PaginationBox  color={color3} content="3"/></div>
-          <div><PaginationBox  color="#DB8521" content=">>"/></div>
-        </div>
-
-      </div>
-     
-    </div>
-   
-    );
+       window.scroll(0,0);
+      
+  
+    return <div>
+      <Container>
+         <div>
+         <Navbar logo_color="#ffff" background="#000" link_color="#ffff" />
+            <BlogHeader title={blog.subject} />
+            <Content tags={blog.tags} date={blog.date} owner={blog.owner} cat={blog.cat}  title={blog.title} description={blog.description} image={blog.image} link={blog.id}/>  
+         </div>
+      </Container>
+      
+      
+    </div>;
 }
