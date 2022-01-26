@@ -1,0 +1,26 @@
+.content_container {
+    background-color: black;
+    padding:30px;
+    height: 85.6vh;
+    overflow-x: hidden;
+    display: flex;
+    justify-content: space-between;
+   
+}
+.circle1 {
+    position: absolute;
+    margin-left: -80px;
+    
+
+}
+.circle2 {
+    
+    float: right;
+    margin-right: -150px;
+    margin-top: 40vh;
+}
+.box1 {
+    position: absolute;
+    margin-top: 60vh;
+}
+

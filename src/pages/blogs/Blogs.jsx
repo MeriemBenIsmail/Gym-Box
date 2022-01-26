@@ -11,7 +11,7 @@ export default function Blogs() {
    
       <Container>
          <div>
-          <Navbar />
+         <Navbar logo_color="#ffff" background="#000" link_color="#ffff" />
           <BlogHeader />  
           <Content /> 
          

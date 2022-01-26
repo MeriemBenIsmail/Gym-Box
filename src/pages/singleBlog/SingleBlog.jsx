@@ -148,7 +148,7 @@ export default function SingleBlog() {
     return <div>
       <Container>
          <div>
-            <Navbar />
+         <Navbar logo_color="#ffff" background="#000" link_color="#ffff" />
             <BlogHeader title={blog.subject} />
             <Content tags={blog.tags} date={blog.date} owner={blog.owner} cat={blog.cat}  title={blog.title} description={blog.description} image={blog.image} link={blog.id}/>  
          </div>

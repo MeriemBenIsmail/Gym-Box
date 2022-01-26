@@ -5,7 +5,7 @@ export default function Home() {
   return (
        
        <div>
-          <Navbar /> 
+          <Navbar logo_color="#ffff" background="#000" link_color="#ffff" />
       </div>
   );
 }
