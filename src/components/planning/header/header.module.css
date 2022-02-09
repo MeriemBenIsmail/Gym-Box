@@ -1,0 +1,39 @@
+.activities_header {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    margin: 0px 10px 0 10px;
+    grid-gap: 0.8rem ;
+    
+}
+.activities_header div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    border-radius: 20px;
+    font-size: 15px;
+    padding: 10px 30px 10px 30px;
+    width: 150px;
+}
+.activities_header .time {
+    border: none;
+    width: 80px;
+}
+.spin {
+    background-color: #FB4570;
+}
+.fitness {
+    background-color: #DB8521;
+}
+.wave {
+    background-color: #EF7C8E;
+}
+.dance {
+    background-color: #D8A7B1;
+}
+.pool {
+    background-color: #189AB4;
+}
+.cross {
+    background-color: #75E6DA;
+}
