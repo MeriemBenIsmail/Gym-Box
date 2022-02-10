@@ -1,6 +1,6 @@
 import classes from "./Instructors.module.css";
 import InsructorCard from "../InstructorCard/InstructorCard";
-const Instructors = () => {
+const Instructors = (props) => {
     
   const instructors = [
       {
@@ -61,7 +61,7 @@ const Instructors = () => {
     }];
   return <div className={classes.instructors}>
       {instructors.map(instructor=>{
-          return <InsructorCard key={instructor.id} instructor={instructor}></InsructorCard>
+          return <InsructorCard key={instructor.id} instructor={instructor} setHideQuote={props.setHideQuote}></InsructorCard>
       })}
   </div>;
 };

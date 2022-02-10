@@ -155,3 +155,13 @@
 .flip-card-front .cardDescription div h3 {
     color: #F2D9BA;
 }
+
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 20;
+    background-color: rgba(170, 155, 122, 0.205);
+}

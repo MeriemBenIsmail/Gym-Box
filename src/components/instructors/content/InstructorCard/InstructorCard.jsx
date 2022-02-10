@@ -1,36 +1,57 @@
 import classes from "./InstructorCard.module.css";
-import { motion } from "framer-motion";
+import { Fragment, useState } from "react";
+import Modal from "../Modal/Modal";
 const InsructorCard = (props) => {
   const instructor = props.instructor;
+  const [showModal, setShowModal] = useState(false);
+  const showHandler = () => {
+    setShowModal(true);
+    props.setHideQuote(true);
+    document.body.style = "overflow:hidden;";
+  };
+  const hideHandler = () => {
+    setShowModal(false);
+    props.setHideQuote(false);
+    document.body.style = "overflow:auto;";
+  };
   return (
-    /*<div className={classes.instructorCard}>
-      <div className={classes.blurCard}></div>
-      <img src={"/assets/images/" + instructor.image} alt="" />
+    /*
+    Create another component for the modal and the backdrop 
+    and make it so the click open a modal with the clicked instructor passes here in props
+    {open && <Modal instructor={instructor}></Modal>}
+    */
 
-      <div className={classes.cardDescription}></div>
-    </div>*/
-    <div className={classes["flip-card"]}>
-      <div className={classes["flip-card-inner"]}>
-        <div className={classes["flip-card-front"]}>
-          <img src={"/assets/images/" + instructor.image} alt="" />
-          <div className={classes.cardDescription}>
-            <div>
-              <h3>{instructor.name}</h3>
-              <p>{instructor.post}</p>
+    <Fragment>
+      <div className={classes["flip-card"]} onClick={showHandler}>
+        {!showModal && (
+          <div className={classes["flip-card-inner"]}>
+            <div className={classes["flip-card-front"]}>
+              <img src={"/assets/images/" + instructor.image} alt="" />
+              <div className={classes.cardDescription}>
+                <div>
+                  <h3>{instructor.name}</h3>
+                  <p>{instructor.post}</p>
+                </div>
+              </div>
+            </div>
+            <div className={classes["flip-card-back"]}>
+              <div className={classes.blurCard}></div>
+              <img src={"/assets/images/" + instructor.image} alt="" />
+              <div className={classes.cardDescription}>
+                <h3>{instructor.name}</h3>
+                <p>{instructor.post}</p>
+                <button>Details</button>
+              </div>
             </div>
           </div>
-        </div>
-        <div className={classes["flip-card-back"]}>
-          <div className={classes.blurCard}></div>
-          <img src={"/assets/images/" + instructor.image} alt="" />
-          <div className={classes.cardDescription}>
-            <h3>{instructor.name}</h3>
-            <p>{instructor.post}</p>
-            <button>Details</button>
-          </div>
-        </div>
+        )}
       </div>
-    </div>
+      <Modal
+        showModal={showModal}
+        hideHandler={hideHandler}
+        instructor={instructor}
+      ></Modal>
+    </Fragment>
   );
 };
 
