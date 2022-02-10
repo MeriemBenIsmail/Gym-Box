@@ -6,6 +6,7 @@ import img2 from '../../../pages/blogs/gym8.jpg';
 import img3 from '../../../pages/blogs/gym9.gif';
 import img4 from '../../../pages/blogs/gym10.jpg';
 import PaginationBox from '../../UI/paginationBox/PaginationBox';
+
 import { useState } from 'react';
 export default function Blog() {
 

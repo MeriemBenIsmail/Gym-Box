@@ -1,4 +1,3 @@
-
 import React from 'react';
 import classes from './navbar.module.css';
 import { Link , useParams } from 'react-router-dom';
@@ -9,8 +8,6 @@ export default function Navbar(props) {
     let activeStyle = {color:"#DB8521",borderBottom:"1px solid #DB8521"}
     let activePage = window.location.pathname;
     let { id } = useParams();
-
-    
 
   return (
       <div className={classes.navbar} style={{backgroundColor:props.background}}>
