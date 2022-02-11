@@ -1,0 +1,110 @@
+[
+    {
+        "time":"08:30",
+        "name":"step",
+        "category":"spinning"
+    },
+    {
+        "time":"08:30",
+        "name":"aquabike",
+        "category":"pool"
+    },
+    {
+        "time":"09:30",
+        "name":"caf",
+        "category":"wave"
+    },
+    {
+        "time":"12:30",
+        "name":"cardiomix",
+        "category":"wave"
+    },
+    {
+        "time":"13:30",
+        "name":"absworkout",
+        "category":"wave"
+    },
+    {
+        "time":"09:30",
+        "name":"aquagym",
+        "category":"pool"
+    },
+    {
+        "time":"16:30",
+        "name":"sixpack",
+        "category":"wave"
+    },
+    {
+        "time":"16:30",
+        "name":"academie natation",
+        "category":"pool"
+    },
+    {
+        "time":"17:30",
+        "name":"academie natation",
+        "category":"pool"
+    },
+    {
+        "time":"18:30",
+        "name":"academie natation",
+        "category":"pool"
+    },
+    {
+        "time":"17:30",
+        "name":"RPM les milles",
+        "category":"spinning"
+    },
+    {
+        "time":"17:30",
+        "name":"caf",
+        "category":"fitness"
+    },
+    {
+        "time":"17:30",
+        "name":"aerogym",
+        "category":"wave"
+    },
+    {
+        "time":"18:30",
+        "name":"spinning",
+        "category":"spinning"
+    },
+    {
+        "time":"18:30",
+        "name":"bodypump les milles",
+        "category":"fitness"
+    },
+    {
+        "time":"18:30",
+        "name":"trx",
+        "category":"dance"
+    },
+    {
+        "time":"18:30",
+        "name":"pilates",
+        "category":"wave"
+    },
+    {
+        "time":"19:30",
+        "name":"bodyattack les milles",
+        "category":"fitness"
+    },
+    {
+        "time":"19:30",
+        "name":"total bodyworkout",
+        "category":"dance"
+    },
+    {
+        "time":"19:30",
+        "name":"100% abdo",
+        "category":"wave"
+    },
+    {
+        "time":"20:30",
+        "name":"caf",
+        "category":"wave"
+    }
+
+
+
+]

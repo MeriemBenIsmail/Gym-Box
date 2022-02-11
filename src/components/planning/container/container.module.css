@@ -16,9 +16,14 @@
     border-bottom-left-radius: 30px;
 color: #fff;
     display: flex;
+   
    justify-content: center;
     align-items: center;
+   
 
+}
+.jour {
+   width: 150px;
 }
 .date h2 {
     transform: rotate(270deg);
@@ -31,6 +36,8 @@ color: #fff;
     font-size: 1.2rem;
     margin-top: 30px;
     margin-bottom: 50px;
+    
+  
 }
 .planning {
     display: flex;
