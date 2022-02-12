@@ -3,7 +3,7 @@ import { Fragment, useState } from "react";
 import Modal from "../Modal/Modal";
 const InsructorCard = (props) => {
   const instructor = props.instructor;
-  const [showModal, setShowModal] = useState(false);
+  const [showModal, setShowModal] = useState(null);
   const showHandler = () => {
     setShowModal(true);
     props.setHideQuote(true);
@@ -46,11 +46,11 @@ const InsructorCard = (props) => {
           </div>
         )}
       </div>
-      <Modal
+     {showModal!=null && <Modal
         showModal={showModal}
         hideHandler={hideHandler}
         instructor={instructor}
-      ></Modal>
+      ></Modal>}
     </Fragment>
   );
 };
