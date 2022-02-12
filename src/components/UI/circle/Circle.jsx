@@ -14,7 +14,7 @@ const circleVariants = {
 }
 export default function Circle(props) {
   return (
-    <motion.div variants={circleVariants} animate="animate" className={classes.box} style={{width:props.width,height:props.height,transform:props.transform}}>
+    <motion.div variants={circleVariants} animate="animate" className={classes.box} style={{width:props.width,height:props.height,transform:props.transform,border:props.border}}>
 
     </motion.div>
     );

@@ -6,7 +6,9 @@ import Planning from './pages/planning/Planning';
 import Blogs from './pages/blogs/Blogs';
 import Instructors from './pages/instructors/Instructors';
 import SingleBlog from './pages/singleBlog/SingleBlog';
+import Courses from './pages/courses/Courses';
 import CustomCursor from './components/UI/customCursor/CustomCursor';
+
 
 function App() {
   return (
@@ -21,6 +23,7 @@ function App() {
                 <Route exact path='/blogs' element={<Blogs />} />
                 <Route exact path='/blogs/:id' element={<SingleBlog />} />
                 <Route exact path='/instructors' element={<Instructors />} />
+                <Route exact path='/courses' element={<Courses />} />
 
               </Routes>
           
