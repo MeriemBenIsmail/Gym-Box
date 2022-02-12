@@ -26,15 +26,15 @@ const Front = () => {
           <motion.h3 variants={contentVariants}>Start swiping to see what we have to offer</motion.h3>
           <motion.ul variants={contentVariants}>
             <motion.li variants={contentVariants}>
-            <i class="fa-solid fa-check"></i>
+            <i className="fas fa-solid fa-check"></i>
               <strong>13</strong> different courses
             </motion.li>
             <motion.li variants={contentVariants}>
-            <i class="fa-solid fa-check"></i>
+            <i className="fas fa-solid fa-check"></i>
               <strong>13</strong> different courses
             </motion.li>
             <motion.li variants={contentVariants}>
-            <i class="fa-solid fa-check"></i>
+            <i className="fas fa-solid fa-check"></i>
               <strong>13</strong> different courses
             </motion.li>
           </motion.ul>

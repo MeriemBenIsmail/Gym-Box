@@ -29,3 +29,6 @@
 .front .content .details ul {
     list-style: none;
 }
+.front .content .details ul li i {
+    margin-right: 5px;
+}
