@@ -7,11 +7,13 @@ import Blogs from './pages/blogs/Blogs';
 import Instructors from './pages/instructors/Instructors';
 import SingleBlog from './pages/singleBlog/SingleBlog';
 import Courses from './pages/courses/Courses';
+import CustomCursor from './components/UI/customCursor/CustomCursor';
+
 
 function App() {
   return (
     <div className="App">
-    
+        <CustomCursor />
        <Router  >
             <Fragment>
            

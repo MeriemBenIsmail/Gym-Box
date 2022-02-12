@@ -3,6 +3,7 @@ import Box from '../../UI/box/Box';
 import Circle from '../../UI/circle/Circle';
 import classes from './content.module.css';
 import Container from '../container/Container';
+
 export default function Content() {
   
   return (
