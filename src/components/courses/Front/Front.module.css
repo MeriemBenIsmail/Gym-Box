@@ -1,0 +1,31 @@
+.front {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    color: aliceblue;
+}
+
+.front .content {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.front .content h1 {
+    color: #DB8521;
+}
+
+.front .content .details {
+    padding: 30px;
+    padding-left: 100px;
+}
+
+.front .content .details h3 {
+    color: #F2D9BA;
+    margin-bottom: 20px;
+}
+
+.front .content .details ul {
+    list-style: none;
+}

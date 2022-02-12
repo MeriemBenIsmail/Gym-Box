@@ -1,0 +1,65 @@
+.photoCollage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.images {
+    position: relative;
+    width: 342px;
+    height: 325px;
+    pointer-events: auto;
+}
+
+.photoCollage img {
+    object-fit: cover;
+    position: absolute;
+}
+
+.photoCollage img:hover {
+    animation: slide-right 300ms ease-out forwards;
+}
+
+@keyframes slide-right {
+    from {
+        transform: scale(1);
+        z-index: 1;
+    }
+    to {
+        transform: scale(2);
+        z-index: 9;
+    }
+}
+
+.img1 {
+    width: 121px;
+    height: 100px;
+    left: 24px;
+    top: 225px;
+}
+
+.img2 {
+    width: 120px;
+    height: 172px;
+    left: 128px;
+}
+
+.img3 {
+    width: 116px;
+    height: 180px;
+    left: 226px;
+    top: 96px;
+}
+
+.img4 {
+    width: 126px;
+    height: 142px;
+    top: 172px;
+    left: 109px;
+}
+
+.img5 {
+    width: 128px;
+    height: 184px;
+    top: 50px;
+}
