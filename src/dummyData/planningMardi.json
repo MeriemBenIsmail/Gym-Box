@@ -2,107 +2,128 @@
     {
         "time":"08:30",
         "name":"step",
-        "category":"spinning"
+        "category":"fitness",
+        "icon":"fas fa-watch-fitness"
     },
     {
         "time":"08:30",
         "name":"aquabike",
-        "category":"pool"
+        "category":"pool",
+        "icon":"fas fa-swimming-pool"
     },
     {
         "time":"09:30",
         "name":"caf",
-        "category":"wave"
+        "category":"wave",
+        "icon":"fas fa-watch-fitness"
     },
     {
         "time":"12:30",
         "name":"cardiomix",
-        "category":"wave"
+        "category":"wave",
+        "icon":"fas fa-biking"
     },
     {
         "time":"13:30",
         "name":"absworkout",
-        "category":"wave"
+        "category":"wave",
+        "icon":"fas fa-watch-fitness"
     },
     {
         "time":"09:30",
         "name":"aquagym",
-        "category":"pool"
+        "category":"pool",
+        "icon":"fas fa-swimming-pool"
     },
     {
         "time":"16:30",
         "name":"sixpack",
-        "category":"wave"
+        "category":"wave",
+        "icon":"fas fa-watch-fitness"
     },
     {
         "time":"16:30",
         "name":"academie natation",
-        "category":"pool"
+        "category":"pool",
+        "icon":"fas fa-swimming-pool"
     },
     {
         "time":"17:30",
         "name":"academie natation",
-        "category":"pool"
+        "category":"pool",
+        "icon":"fas fa-swimming-pool"
     },
     {
         "time":"18:30",
         "name":"academie natation",
-        "category":"pool"
+        "category":"pool",
+        "icon":"fas fa-swimming-pool"
     },
     {
         "time":"17:30",
         "name":"RPM les milles",
-        "category":"spinning"
+        "category":"spinning",
+        "icon":"fas fa-biking"
     },
     {
         "time":"17:30",
         "name":"caf",
-        "category":"fitness"
+        "category":"fitness",
+        "icon":"fas fa-fire-alt"
     },
     {
         "time":"17:30",
         "name":"aerogym",
-        "category":"wave"
+        "category":"wave",
+        "icon":"fas fa-biking"
     },
     {
         "time":"18:30",
         "name":"spinning",
-        "category":"spinning"
+        "category":"spinning",
+        "icon":"fas fa-fire-alt"
     },
     {
         "time":"18:30",
         "name":"bodypump les milles",
-        "category":"fitness"
+        "category":"fitness",
+        "icon":"fas fa-dumbbell"
     },
     {
         "time":"18:30",
         "name":"trx",
-        "category":"dance"
+        "category":"dance",
+        "icon":"fas fa-fire-alt"
     },
     {
         "time":"18:30",
         "name":"pilates",
-        "category":"wave"
+        "category":"wave",
+        "icon":"fas fa-spa"
     },
     {
         "time":"19:30",
         "name":"bodyattack les milles",
-        "category":"fitness"
+        "category":"fitness",
+        "icon":"fas fa-watch-fitness"
     },
     {
         "time":"19:30",
         "name":"total bodyworkout",
-        "category":"dance"
+        "category":"dance",
+        "icon":"fas fa-dumbbell"
     },
     {
         "time":"19:30",
         "name":"100% abdo",
-        "category":"wave"
+        "category":"wave",
+        "icon":"fas fa-watch-fitness"
     },
     {
         "time":"20:30",
         "name":"caf",
-        "category":"wave"
+        "category":"wave",
+        "icon":"fas fa-watch-fitness"
     }
 
 

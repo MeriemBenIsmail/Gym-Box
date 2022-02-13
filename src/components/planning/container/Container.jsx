@@ -3,11 +3,11 @@ import classes from './container.module.css';
 import { useState } from 'react';
 import  lundi  from '../../../dummyData/planningLundi.json';
 import  mardi  from '../../../dummyData/planningMardi.json';
-import  mercredi from '../../../dummyData/planningMardi.json';
-import  jeudi  from '../../../dummyData/planningMardi.json';
-import  vendredi  from '../../../dummyData/planningMardi.json';
-import  samedi  from '../../../dummyData/planningMardi.json';
-import  dimanche  from '../../../dummyData/planningMardi.json';
+import  mercredi from '../../../dummyData/planningMercredi.json';
+import  jeudi  from '../../../dummyData/planningJeudi.json';
+import  vendredi  from '../../../dummyData/planningVendredi.json';
+import  samedi  from '../../../dummyData/planningSamedi.json';
+import  dimanche  from '../../../dummyData/planningDimanche.json';
 import Header from '../header/Header';
 import Program from '../program/Program';
 export default function Container() {
@@ -56,7 +56,7 @@ export default function Container() {
       return prog.time === time && prog.category === cat
     })
     if (prog[0]) {
-      return prog[0].name
+      return [prog[0].name,prog[0].icon]
     } else return ""
   }
  

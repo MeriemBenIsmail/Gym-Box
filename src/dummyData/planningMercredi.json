@@ -11,14 +11,9 @@
         "category":"pool",
         "icon":"fas fa-swimming-pool"
     },
+    
     {
-        "time":"09:30",
-        "name":"caf",
-        "category":"wave",
-        "icon":"fas fa-watch-fitness"
-    },
-    {
-        "time":"12:30",
+        "time":"11:30",
         "name":"cardiomix",
         "category":"wave",
         "icon":"fas fa-biking"
@@ -65,12 +60,7 @@
         "category":"spinning",
         "icon":"fas fa-biking"
     },
-    {
-        "time":"17:30",
-        "name":"caf",
-        "category":"fitness",
-        "icon":"fas fa-fire-alt"
-    },
+   
     {
         "time":"17:30",
         "name":"aerogym",
