@@ -17,7 +17,8 @@ export default function Container() {
   const timeTable2 = ["15:30","16:30","17:30","18:30","19:30","20:30"];
   const semaine = ["Lundi","Mardi","Mercredi","Jeudi","Vendredi","Samedi","Dimanche"];
   const semaineTable = [lundi,mardi,mercredi,jeudi,vendredi,samedi,dimanche];
-  const [isToggled, setIsToggled] = useState(true);
+  const [planning1,setPlanning1] = useState(true);
+  const [planning2,setPlanning2] = useState(false);
   const [jour,setJour] = useState("Lundi");
   const [progTable,setProgTable] = useState(lundi);
 
@@ -30,6 +31,24 @@ export default function Container() {
       setProgTable(semaineTable[semaineTable.indexOf(progTable) + 1])
     }
     
+  }
+  const previousDay = () => {
+    if ( semaine.indexOf(jour) === 0) {
+      setJour(semaine[6]);
+      setProgTable(semaineTable[6]);
+    } else {
+      setJour(semaine[semaine.indexOf(jour) - 1]);
+      setProgTable(semaineTable[semaineTable.indexOf(progTable) - 1])
+    }
+  }
+  const handleClick = () => {
+    if(planning1) {
+      setPlanning1(false);
+      setPlanning2(true);
+    } else {
+      setPlanning1(true);
+      setPlanning2(false);
+    }
   }
   const getProg = (time,cat,jourj) => {
 
@@ -46,40 +65,59 @@ export default function Container() {
         <div className={classes.planning_container}>
           
           <div className={classes.date}>
-          
+          <div onClick={previousDay}><i className="fas fa-arrow-alt-up"></i></div>
             <div className={classes.jour}>
-            <h2>{jour}</h2> 
+                
+                <h2>{jour}</h2> 
+
+                <div className={classes.detail_date}>
+                  <p>7</p>
+                  <p>Février</p>
+                  <p>2022</p>
+                </div>
+                
+                
+            </div>
+            <div onClick={nextDay} ><i className="fas fa-arrow-alt-down"></i></div>
             
-            <div>
-              <p>2022</p>
-              <p>Février</p>
-              <p>07</p>
-            </div>
-            </div>
           </div>
           <div className={classes.planning}>
             <Header />
-            <div className={classes.content} >
+            <div 
+              
+            className={classes.content} >
               {
-                isToggled ?
+                planning1 &&
                   timeTable1.map((prog) => {
                     return (
-                     <Program jour={progTable} prog={prog} getProg={getProg}/>
+                    
+                        <Program jour={progTable} prog={prog} getProg={getProg}/>
+                     
+                     
+                     
 
                     )  
-                }) : 
+                })  }
+                { planning2 &&  
                  timeTable2.map((prog) => {
                   return (
+                   
                       <Program jour={progTable} prog={prog} getProg={getProg}/>
+                  
                   )  
               })
               
               }
  
             </div>
-            <div onClick={ () => setIsToggled(!isToggled) }>scroll</div>
-            <div onClick={nextDay}>next day</div>
-          </div>
+
+            <div onClick={handleClick} className={classes.scrolldown}>
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+           </div>
+            
         </div>
     );
 }
