@@ -3,6 +3,7 @@ import classes from './program.module.css';
 import { motion, useAnimation, AnimatePresence } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import { useEffect } from 'react';
+import { Icon } from '@iconify/react';
 
 const containerVariants = {
     hidden:{
@@ -43,9 +44,19 @@ const boxVariants = {
         boxShadow: "0px 0px 8px rgb(255,255,255)",
         transition: {
           duration: 0.3,
-          yoyo: Infinity
+          yoyo: Infinity,
+          type:"spring",
+          mass:0.4,
+          damping:8,
+          when:"beforeChildren",
+          staggerChildren:0.4
         }
       }
+}
+const boxChildrenVariants = {
+    hover:{
+        scale:1.2
+    }
 }
 
 export default function Program(props) {
@@ -69,37 +80,37 @@ export default function Program(props) {
                 <motion.div exit={{x:"-100vw"}} variants={childrenVariants} className={classes.col_time}>{props.prog}</motion.div>
                 <motion.div variants={childrenVariants} className={classes.col} style={{background:"#FB4570"}}>
                     <motion.div variants={boxVariants} whileHover="hover" className={classes.col} style={{background:"#FB4570"}}>
-                        <div className={classes.icon}><i className={ props.getProg(props.prog,"spinning",props.jour)[1]}></i> </div>
+                        <motion.div variants={boxChildrenVariants} className={classes.icon}><Icon style={{margin:"0",width:"30px",height:"30px"}} icon={ props.getProg(props.prog,"spinning",props.jour)[1]} /> </motion.div>
                         <div className={classes.activity}>{ props.getProg(props.prog,"spinning",props.jour)[0]}</div>
                     </motion.div>
                 </motion.div>
                 <motion.div variants={childrenVariants}  className={classes.col} style={{background:"#DB8521"}}>
                     <motion.div variants={boxVariants} whileHover="hover" className={classes.col} style={{background:"#DB8521"}} >
-                        <div className={classes.icon}><i className={ props.getProg(props.prog,"fitness",props.jour)[1]}></i> </div>
+                        <div className={classes.icon}><Icon style={{margin:"0",width:"30px",height:"30px"}} icon={ props.getProg(props.prog,"fitness",props.jour)[1]} /> </div>
                         <div className={classes.activity}>{ props.getProg(props.prog,"fitness",props.jour)[0]}</div>
                     </motion.div>
                 </motion.div>
                 <motion.div variants={childrenVariants}  className={classes.col} style={{background:"#D8A7B1"}}>
                    <motion.div variants={boxVariants} whileHover="hover"  className={classes.col} style={{background:"#D8A7B1"}} >
-                        <div className={classes.icon}><i className={ props.getProg(props.prog,"dance",props.jour)[1]}></i> </div>
+                        <div className={classes.icon}><Icon style={{margin:"0",width:"30px",height:"30px"}} icon={ props.getProg(props.prog,"dance",props.jour)[1]} /> </div>
                         <div className={classes.activity}>{ props.getProg(props.prog,"dance",props.jour)[0]}</div>
                     </motion.div>
                 </motion.div>
                 <motion.div variants={childrenVariants}  className={classes.col} style={{background:"#EF7C8E"}}>
                     <motion.div variants={boxVariants} whileHover="hover" className={classes.col} style={{background:"#EF7C8E"}} >
-                        <div className={classes.icon}><i className={ props.getProg(props.prog,"wave",props.jour)[1]}></i> </div>
+                        <div className={classes.icon}><Icon style={{margin:"0",width:"30px",height:"30px"}} icon={ props.getProg(props.prog,"wave",props.jour)[1]} /></div>
                         <div className={classes.activity}>{ props.getProg(props.prog,"wave",props.jour)[0]}</div>
                     </motion.div>
                 </motion.div>
                 <motion.div variants={childrenVariants}  className={classes.col} style={{background:"#75E6DA"}}>
                     <motion.div variants={boxVariants} whileHover="hover" className={classes.col} style={{background:"#75E6DA"}} >
-                        <div className={classes.icon}><i className={ props.getProg(props.prog,"cross",props.jour)[1]}></i> </div>
+                        <div className={classes.icon}><Icon style={{margin:"0",width:"30px",height:"30px"}} icon={ props.getProg(props.prog,"cross",props.jour)[1]} /> </div>
                         <div className={classes.activity}>{ props.getProg(props.prog,"cross",props.jour)[0]}</div>
                     </motion.div>
                 </motion.div>
                 <motion.div variants={childrenVariants}  className={classes.col} style={{background:"#189AB4"}}>
                     <motion.div variants={boxVariants} whileHover="hover" className={classes.col} style={{background:"#189AB4"}}>
-                        <div className={classes.icon}><i className={ props.getProg(props.prog,"pool",props.jour)[1]}></i> </div>
+                        <div className={classes.icon}><Icon style={{margin:"0",width:"30px",height:"30px"}} icon={ props.getProg(props.prog,"pool",props.jour)[1]} /> </div>
                         <div className={classes.activity}>{ props.getProg(props.prog,"pool",props.jour)[0]}</div>
                     </motion.div>
                 </motion.div>

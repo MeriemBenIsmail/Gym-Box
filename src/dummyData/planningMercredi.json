@@ -3,117 +3,127 @@
         "time":"08:30",
         "name":"step",
         "category":"fitness",
-        "icon":"fas fa-watch-fitness"
+        "icon":"ion:footsteps-sharp"
     },
     {
         "time":"08:30",
         "name":"aquabike",
         "category":"pool",
-        "icon":"fas fa-swimming-pool"
+        "icon":"noto-v1:man-swimming-medium-light-skin-tone"
     },
-    
     {
-        "time":"11:30",
+        "time":"09:30",
+        "name":"caf",
+        "category":"wave",
+        "icon":"medical-icon:cardiology"
+    },
+    {
+        "time":"12:30",
         "name":"cardiomix",
         "category":"wave",
-        "icon":"fas fa-biking"
+        "icon":"medical-icon:cardiology"
     },
     {
         "time":"13:30",
         "name":"absworkout",
         "category":"wave",
-        "icon":"fas fa-watch-fitness"
+        "icon":"mdi:car-brake-abs"
     },
     {
         "time":"09:30",
         "name":"aquagym",
         "category":"pool",
-        "icon":"fas fa-swimming-pool"
+        "icon":"noto-v1:man-swimming-medium-light-skin-tone"
     },
     {
         "time":"16:30",
         "name":"sixpack",
         "category":"wave",
-        "icon":"fas fa-watch-fitness"
+        "icon":"mdi:car-brake-abs"
     },
     {
         "time":"16:30",
         "name":"academie natation",
         "category":"pool",
-        "icon":"fas fa-swimming-pool"
+        "icon":"noto-v1:man-swimming-medium-light-skin-tone"
     },
     {
         "time":"17:30",
         "name":"academie natation",
         "category":"pool",
-        "icon":"fas fa-swimming-pool"
+        "icon":"noto-v1:man-swimming-medium-light-skin-tone"
     },
     {
         "time":"18:30",
         "name":"academie natation",
         "category":"pool",
-        "icon":"fas fa-swimming-pool"
+        "icon":"noto-v1:man-swimming-medium-light-skin-tone"
     },
     {
         "time":"17:30",
         "name":"RPM les milles",
         "category":"spinning",
-        "icon":"fas fa-biking"
+        "icon":"emojione:person-biking-medium-skin-tone"
     },
-   
+    {
+        "time":"17:30",
+        "name":"caf",
+        "category":"fitness",
+        "icon":"icon-park:sport"
+    },
     {
         "time":"17:30",
         "name":"aerogym",
         "category":"wave",
-        "icon":"fas fa-biking"
+        "icon":"emojione:person-biking-medium-skin-tone"
     },
     {
         "time":"18:30",
         "name":"spinning",
         "category":"spinning",
-        "icon":"fas fa-fire-alt"
+        "icon":"emojione:boxing-glove"
     },
     {
         "time":"18:30",
         "name":"bodypump les milles",
         "category":"fitness",
-        "icon":"fas fa-dumbbell"
+        "icon":"noto:person-lifting-weights"
     },
     {
         "time":"18:30",
         "name":"trx",
         "category":"dance",
-        "icon":"fas fa-fire-alt"
+        "icon":"emojione:boxing-glove"
     },
     {
         "time":"18:30",
         "name":"pilates",
         "category":"wave",
-        "icon":"fas fa-spa"
+        "icon":"iconoir:yoga"
     },
     {
         "time":"19:30",
         "name":"bodyattack les milles",
         "category":"fitness",
-        "icon":"fas fa-watch-fitness"
+        "icon":"noto:person-lifting-weights"
     },
     {
         "time":"19:30",
         "name":"total bodyworkout",
         "category":"dance",
-        "icon":"fas fa-dumbbell"
+        "icon":"noto:person-lifting-weights"
     },
     {
         "time":"19:30",
         "name":"100% abdo",
         "category":"wave",
-        "icon":"fas fa-watch-fitness"
+        "icon":"mdi:car-brake-abs"
     },
     {
         "time":"20:30",
         "name":"caf",
         "category":"wave",
-        "icon":"fas fa-watch-fitness"
+        "icon":"noto:person-lifting-weights"
     }
 
 
