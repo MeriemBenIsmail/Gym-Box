@@ -1,12 +1,12 @@
 [
     {
-        "time":"08:30",
+        "time":"09:30",
         "name":"step",
         "category":"fitness",
         "icon":"fas fa-watch-fitness"
     },
     {
-        "time":"08:30",
+        "time":"10:30",
         "name":"aquabike",
         "category":"pool",
         "icon":"fas fa-swimming-pool"
@@ -53,12 +53,7 @@
         "category":"pool",
         "icon":"fas fa-swimming-pool"
     },
-    {
-        "time":"18:30",
-        "name":"academie natation",
-        "category":"pool",
-        "icon":"fas fa-swimming-pool"
-    },
+    
     {
         "time":"17:30",
         "name":"RPM les milles",
@@ -77,12 +72,7 @@
         "category":"wave",
         "icon":"fas fa-biking"
     },
-    {
-        "time":"18:30",
-        "name":"spinning",
-        "category":"spinning",
-        "icon":"fas fa-fire-alt"
-    },
+    
     {
         "time":"18:30",
         "name":"bodypump les milles",
